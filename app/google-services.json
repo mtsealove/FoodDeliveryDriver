@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "922426178831",
+    "firebase_url": "https://deliveryfooddriver.firebaseio.com",
+    "project_id": "deliveryfooddriver",
+    "storage_bucket": "deliveryfooddriver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922426178831:android:968c0825eca8c7f9ff527a",
+        "android_client_info": {
+          "package_name": "com.mtsealove.github.food_delivery_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922426178831-b70akddkolv33342gbufum9oh8er88o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfLRBdRWZMbADEHk-qLI7kE9G08MUfOZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922426178831-b70akddkolv33342gbufum9oh8er88o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

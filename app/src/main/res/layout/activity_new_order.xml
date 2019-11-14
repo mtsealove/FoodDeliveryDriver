@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NewOrderActivity">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:textSize="24sp"
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              android:id="@+id/titleTv"
+              android:text="새로운 주문"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_below="@id/titleTv"
+            android:layout_above="@id/closeBtn"
+            android:id="@+id/newOrderRv"
+            android:layout_marginHorizontal="20dp" />
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/closeBtn"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_red"
+            android:text="닫기"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"/>
+
+</RelativeLayout>
