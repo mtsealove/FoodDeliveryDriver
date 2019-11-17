@@ -17,8 +17,8 @@ public class IpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ip);
 
-        ipEt=findViewById(R.id.ipEt);
-        confirmBtn=findViewById(R.id.confirmBtn);
+        ipEt = findViewById(R.id.ipEt);
+        confirmBtn = findViewById(R.id.confirmBtn);
 
         confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,7 @@ public class IpActivity extends AppCompatActivity {
     }
 
     private void setIp() {
-        String IP=ipEt.getText().toString();
+        String IP = ipEt.getText().toString();
         SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
         editor.putString("ip", IP);

@@ -15,6 +15,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+
+        <meta-data
+                android:name="com.kakao.sdk.AppKey"
+                android:value="2c0e1504dac44fdd17b6c859b2a47dd9"/>
         <activity android:name=".OrderActivity">
         </activity>
         <activity android:name=".NewOrderActivity">

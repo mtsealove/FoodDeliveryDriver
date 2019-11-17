@@ -2,7 +2,12 @@ package com.mtsealove.github.food_delivery_driver;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Handler;
+import android.util.Base64;
+import android.util.Log;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +15,7 @@ import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 import com.mtsealove.github.food_delivery_driver.Deisgn.SystemUiTuner;
 
+import java.security.MessageDigest;
 import java.util.List;
 
 public class SplashActivity extends AppCompatActivity {

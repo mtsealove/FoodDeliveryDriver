@@ -49,8 +49,8 @@ public class UpdateLocationService extends Service {    //백그라운드에서 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {  //서비스가 시작될 때
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(UpdateLocationService.this)   //알림 만들기
-                .setContentTitle("주문배달 서비스") //제목
-                .setContentText("주문배달 서비스가 실행중입니다")  //내용
+                .setContentTitle("주문배달 서비스(기사님)") //제목
+                .setContentText("현재 중행중입니다")  //내용
                 .setSmallIcon(R.drawable.logo_no_back) //아이콘 설정
                 .setOngoing(true);  //상단바에 띄우기
         if (Build.VERSION.SDK_INT > 26)

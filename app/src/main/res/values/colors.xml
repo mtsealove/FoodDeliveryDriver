@@ -10,4 +10,5 @@
     <color name="blue">#1C7CD5</color>
     <color name="red">#D9534F</color>
     <color name="green">#5CB85C</color>
+    <color name="helf_trans">#CCFFFFFF</color>
 </resources>

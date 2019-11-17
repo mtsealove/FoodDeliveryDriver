@@ -55,7 +55,7 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder notificationBuilder =
                 new NotificationCompat.Builder(this, channelId)
                         .setSmallIcon(R.drawable.logo_no_back)
-                        .setContentTitle("주문배달 서비스")
+                        .setContentTitle("주문배달 서비스(기사님)")
                         .setContentText(messageBody)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)

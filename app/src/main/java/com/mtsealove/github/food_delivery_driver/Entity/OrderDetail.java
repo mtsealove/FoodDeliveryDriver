@@ -1,12 +1,13 @@
 package com.mtsealove.github.food_delivery_driver.Entity;
 
 public class OrderDetail {
-    String OrderTime, Location, CurrentLocation;
+    String OrderTime, Location, CurrentLocation, StatusName;
 
-    public OrderDetail(String orderTime, String location, String currentLocation) {
+    public OrderDetail(String orderTime, String location, String currentLocation, String statusName) {
         OrderTime = orderTime;
         Location = location;
         CurrentLocation = currentLocation;
+        StatusName = statusName;
     }
 
     public String getOrderTime() {
@@ -31,5 +32,23 @@ public class OrderDetail {
 
     public void setCurrentLocation(String currentLocation) {
         CurrentLocation = currentLocation;
+    }
+
+    public String getStatusName() {
+        return StatusName;
+    }
+
+    public void setStatusName(String statusName) {
+        StatusName = statusName;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderDetail{" +
+                "OrderTime='" + OrderTime + '\'' +
+                ", Location='" + Location + '\'' +
+                ", CurrentLocation='" + CurrentLocation + '\'' +
+                ", StatusName='" + StatusName + '\'' +
+                '}';
     }
 }

@@ -5,10 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -23,6 +20,7 @@ import retrofit2.Response;
 public class LoginActivity extends AppCompatActivity {
     EditText idEt, pwEt;
     Button loginBtn;
+    TextView titleTv;
     String tag = getClass().getSimpleName();
     public static Login login;
 
@@ -40,6 +38,15 @@ public class LoginActivity extends AppCompatActivity {
         pwEt = findViewById(R.id.pwEt);
         loginBtn = findViewById(R.id.loginBtn);
         keepCb = findViewById(R.id.keepCb);
+        titleTv = findViewById(R.id.titleTv);
+        titleTv.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, IpActivity.class);
+                startActivity(intent);
+                return false;
+            }
+        });
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
